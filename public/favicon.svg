@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#B200FF" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0B0F19"/>
+  <!-- Space Grotesk/Inter fallback modern tech styling -->
+  <text x="56" y="85" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="68" letter-spacing="-2" text-anchor="middle" fill="url(#neon)" filter="url(#glow)">AP</text>
+  <circle cx="96" cy="85" r="5" fill="#00F0FF" filter="url(#glow)"/>
+</svg>
